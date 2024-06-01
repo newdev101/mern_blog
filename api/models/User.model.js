@@ -1,16 +1,16 @@
 import mongoose from "mongoose";
-import { type } from "os";
+
 
 const userSchema = new mongoose.Schema({
      username:{
           type:String,
           required:true,
-          uniuqe:true,
+          unique:true,
      },
      email:{
           type:String,
           required:true,
-          uniuqe:true,
+          unique:true,
      },
      password:{
           type: String,
