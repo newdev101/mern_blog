@@ -17,10 +17,14 @@ export const signup = async(req, res, next)=>{
     });
 
     try{
+
      await newUser.save();
      res.json({"message":"Signup success"});
+
     }catch (error){   
+
      next(error);
+     
     }
 
 }
